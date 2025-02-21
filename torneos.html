@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-translate="page.title">Torneos - Club de Tiro Huelva</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="scss/custom.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Ion Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Navbar -->
+    <a href="#about" class="visually-hidden-focusable" data-translate="skip-nav">saltar barra de navegación</a>
+    <nav class="nav navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand nav-link" href="index.html">
+          <img src="imagenes/logo con texto (1).svg" alt="Logo del Club" width="40" height="40">
+          Club de Tiro Huelva
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cursos.html"><i class="fas fa-bullseye"></i> Curso de iniciación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="torneos.html"><i class="fas fa-trophy"></i> Competiciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="plusmarcas.html"><i class="fas fa-info-circle"></i> Plusmarcas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="languageSelectorDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-translate="navbar.language">
+                <i class="fas fa-globe"></i> Idioma
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageSelectorDropdown">
+                <li>
+                  <a class="dropdown-item" href="#" id="spanish" data-lang="es">Español</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" id="english" data-lang="en">English</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="dark-mode">
+          <div class="circle">
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+            <script src="script.js"></script>
+            <ion-icon class="sun" name="sunny"></ion-icon>
+            <ion-icon class="moon" name="moon"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="text-center text-white d-flex align-items-center justify-content-center"
+      style="height: 50vh; background-image: url('imagenes/torneobanner2.jpg'); background-size: cover; background-position: center;">
+      <div data-aos="fade-up" data-aos-duration="1000">
+        <h1 class="display-4 text-shadow fw-bold" data-translate="header.title">Competiciones de Tiro con Arco</h1>
+        <p class="lead text-shadow fw-bold" data-translate="header.subtitle">Explora los próximos eventos y participa en la acción</p>
+      </div>
+    </header>
+
+    <!-- Sección de Torneos -->
+    <main class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4" data-translate="main.title" data-aos="fade-up" data-aos-duration="1000">Competiciones</h2>
+        <div class="row">
+          <!-- Próximas Competiciones -->
+          <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+            <h3 class="mb-3" data-translate="main.upcoming">Próximas Competiciones</h3>
+            <ul class="list-group">
+              <!-- Competición 1 -->
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h5 class="mb-1" data-translate="competition.andalucia.title">Campeonato de Andalucía</h5>
+                    <p class="mb-1" data-translate="competition.andalucia.date">Fecha: 12 de marzo de 2024</p>
+                    <p class="mb-1" data-translate="competition.andalucia.location">Lugar: Polideportivo Municipal, Huelva</p>
+                  </div>
+                  <a href="inscripcionAndalucia.html" class="btn btn-success btn-sm" data-translate="competition.signup">Inscribirse</a>
+                </div>
+              </li>
+              <!-- Competición 2 -->
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h5 class="mb-1" data-translate="competition.national.title">Campeonato Nacional</h5>
+                    <p class="mb-1" data-translate="competition.national.date">Fecha: 25 de abril de 2024</p>
+                    <p class="mb-1" data-translate="competition.national.location">Lugar: Estadio Nacional de Tiro, Sevilla</p>
+                  </div>
+                  <a href="inscripcionNacional.html" class="btn btn-success btn-sm" data-translate="competition.signup">Inscribirse</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Torneos Finalizados -->
+          <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+            <h3 class="mb-3" data-translate="main.completed">Torneos Finalizados</h3>
+            <ul class="list-group">
+              <!-- Torneo 1 -->
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h5 class="mb-1" data-translate="competition.provincial.title">Campeonato Provincial</h5>
+                    <p class="mb-1" data-translate="competition.provincial.date">Fecha: 5 de diciembre de 2023</p>
+                    <p class="mb-1" data-translate="competition.provincial.location">Lugar: Polideportivo San Pedro, Huelva</p>
+                  </div>
+                  <a href="campeonatoTerminado.html" class="btn btn-secondary btn-sm" data-translate="competition.more">Ver más</a>
+                </div>
+              </li>
+              <!-- Torneo 2 -->
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h5 class="mb-1" data-translate="competition.spain.title">Campeonato de España</h5>
+                    <p class="mb-1" data-translate="competition.spain.date">Fecha: 15 de noviembre de 2023</p>
+                    <p class="mb-1" data-translate="competition.spain.location">Lugar: Universidad Complutense, Madrid</p>
+                  </div>
+                  <a href="enConstruccion.html" class="btn btn-secondary btn-sm" data-translate="competition.more">Ver más</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <p class="text-center" data-translate="footer.copyright">
+          &copy; 2024 Club de Tiro con Arco Huelva. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // Inicializar AOS
+      AOS.init();
+    </script>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

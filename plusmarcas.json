@@ -1,0 +1,326 @@
+[
+  {
+    "nombre": "Juan Pérez",
+    "categoria": "alevin",
+    "modalidad": "recurvo",
+    "genero": "Masculino",
+    "marca": "280",
+    "fecha": "2023-12-01",
+    "detalle": "Marca destacada en recurvo alevín"
+  },
+  {
+    "nombre": "Ana López",
+    "categoria": "alevin",
+    "modalidad": "recurvo",
+    "genero": "Femenino",
+    "marca": "290",
+    "fecha": "2023-12-02",
+    "detalle": "Mejor marca en distancia larga"
+  },
+  {
+    "nombre": "Carlos Gómez",
+    "categoria": "alevin",
+    "modalidad": "compuesto",
+    "genero": "Masculino",
+    "marca": "275",
+    "fecha": "2023-12-03",
+    "detalle": "Primer puesto en compuesto"
+  },
+  {
+    "nombre": "Lucía Fernández",
+    "categoria": "alevin",
+    "modalidad": "compuesto",
+    "genero": "Femenino",
+    "marca": "265",
+    "fecha": "2023-12-04",
+    "detalle": "Excelente desempeño"
+  },
+  {
+    "nombre": "Pedro Ruiz",
+    "categoria": "alevin",
+    "modalidad": "tradicional",
+    "genero": "Masculino",
+    "marca": "250",
+    "fecha": "2023-12-05",
+    "detalle": "Puntaje destacado"
+  },
+  {
+    "nombre": "María Sánchez",
+    "categoria": "alevin",
+    "modalidad": "tradicional",
+    "genero": "Femenino",
+    "marca": "260",
+    "fecha": "2023-12-06",
+    "detalle": "Mejor rendimiento"
+  },
+  {
+    "nombre": "José Martínez",
+    "categoria": "infantil",
+    "modalidad": "recurvo",
+    "genero": "Masculino",
+    "marca": "300",
+    "fecha": "2023-12-07",
+    "detalle": "Máxima puntuación en recurvo"
+  },
+  {
+    "nombre": "Elena Torres",
+    "categoria": "infantil",
+    "modalidad": "recurvo",
+    "genero": "Femenino",
+    "marca": "310",
+    "fecha": "2023-12-08",
+    "detalle": "Record personal en recurvo"
+  },
+  {
+    "nombre": "Miguel Ramírez",
+    "categoria": "infantil",
+    "modalidad": "compuesto",
+    "genero": "Masculino",
+    "marca": "295",
+    "fecha": "2023-12-09",
+    "detalle": "Segundo lugar en compuesto"
+  },
+  {
+    "nombre": "Laura Ortega",
+    "categoria": "infantil",
+    "modalidad": "compuesto",
+    "genero": "Femenino",
+    "marca": "285",
+    "fecha": "2023-12-10",
+    "detalle": "Mejor promedio en compuesto"
+  },
+  {
+    "nombre": "Hugo Blanco",
+    "categoria": "infantil",
+    "modalidad": "tradicional",
+    "genero": "Masculino",
+    "marca": "270",
+    "fecha": "2023-12-11",
+    "detalle": "Puntaje sólido en tradicional"
+  },
+  {
+    "nombre": "Sofía Moreno",
+    "categoria": "infantil",
+    "modalidad": "tradicional",
+    "genero": "Femenino",
+    "marca": "280",
+    "fecha": "2023-12-12",
+    "detalle": "Gran progreso en tradicional"
+  },
+  {
+    "nombre": "David Gil",
+    "categoria": "cadete",
+    "modalidad": "recurvo",
+    "genero": "Masculino",
+    "marca": "310",
+    "fecha": "2023-12-13",
+    "detalle": "Excelente en recurvo cadete"
+  },
+  {
+    "nombre": "Carla Vega",
+    "categoria": "cadete",
+    "modalidad": "recurvo",
+    "genero": "Femenino",
+    "marca": "320",
+    "fecha": "2023-12-14",
+    "detalle": "Récord en cadete recurvo"
+  },
+  {
+    "nombre": "Luis Herrera",
+    "categoria": "cadete",
+    "modalidad": "compuesto",
+    "genero": "Masculino",
+    "marca": "305",
+    "fecha": "2023-12-15",
+    "detalle": "Alta precisión en compuesto"
+  },
+  {
+    "nombre": "Marta Pérez",
+    "categoria": "cadete",
+    "modalidad": "compuesto",
+    "genero": "Femenino",
+    "marca": "295",
+    "fecha": "2023-12-16",
+    "detalle": "Mejor tiempo en compuesto"
+  },
+  {
+    "nombre": "Alberto Ruiz",
+    "categoria": "cadete",
+    "modalidad": "tradicional",
+    "genero": "Masculino",
+    "marca": "285",
+    "fecha": "2023-12-17",
+    "detalle": "Consistencia destacada"
+  },
+  {
+    "nombre": "Isabel Ramírez",
+    "categoria": "cadete",
+    "modalidad": "tradicional",
+    "genero": "Femenino",
+    "marca": "290",
+    "fecha": "2023-12-18",
+    "detalle": "Tercer lugar en tradicional"
+  },
+  {
+    "nombre": "Fernando Díaz",
+    "categoria": "junior",
+    "modalidad": "recurvo",
+    "genero": "Masculino",
+    "marca": "320",
+    "fecha": "2023-12-19",
+    "detalle": "Excelente forma en recurvo junior"
+  },
+  {
+    "nombre": "Natalia Jiménez",
+    "categoria": "junior",
+    "modalidad": "recurvo",
+    "genero": "Femenino",
+    "marca": "330",
+    "fecha": "2023-12-20",
+    "detalle": "Líder en recurvo junior"
+  },
+  {
+    "nombre": "Manuel Fuentes",
+    "categoria": "junior",
+    "modalidad": "compuesto",
+    "genero": "Masculino",
+    "marca": "315",
+    "fecha": "2023-12-21",
+    "detalle": "Gran técnica en compuesto"
+  },
+  {
+    "nombre": "Patricia Alonso",
+    "categoria": "junior",
+    "modalidad": "compuesto",
+    "genero": "Femenino",
+    "marca": "305",
+    "fecha": "2023-12-22",
+    "detalle": "Mejor puntaje en compuesto"
+  },
+  {
+    "nombre": "Iván Navarro",
+    "categoria": "junior",
+    "modalidad": "tradicional",
+    "genero": "Masculino",
+    "marca": "295",
+    "fecha": "2023-12-23",
+    "detalle": "Desempeño sólido"
+  },
+  {
+    "nombre": "Andrea Gutiérrez",
+    "categoria": "junior",
+    "modalidad": "tradicional",
+    "genero": "Femenino",
+    "marca": "305",
+    "fecha": "2023-12-24",
+    "detalle": "Progreso destacado"
+  },
+  {
+    "nombre": "Tomás Bravo",
+    "categoria": "senior",
+    "modalidad": "recurvo",
+    "genero": "Masculino",
+    "marca": "330",
+    "fecha": "2023-12-25",
+    "detalle": "Campeón en recurvo senior"
+  },
+  {
+    "nombre": "Cristina Suárez",
+    "categoria": "senior",
+    "modalidad": "recurvo",
+    "genero": "Femenino",
+    "marca": "340",
+    "fecha": "2023-12-26",
+    "detalle": "Excelente precisión"
+  },
+  {
+    "nombre": "Ramón López",
+    "categoria": "senior",
+    "modalidad": "compuesto",
+    "genero": "Masculino",
+    "marca": "325",
+    "fecha": "2023-12-27",
+    "detalle": "Gran habilidad en compuesto"
+  },
+  {
+    "nombre": "Silvia Márquez",
+    "categoria": "senior",
+    "modalidad": "compuesto",
+    "genero": "Femenino",
+    "marca": "315",
+    "fecha": "2023-12-28",
+    "detalle": "Competencia destacada"
+  },
+  {
+    "nombre": "Álvaro Serrano",
+    "categoria": "senior",
+    "modalidad": "tradicional",
+    "genero": "Masculino",
+    "marca": "310",
+    "fecha": "2023-12-29",
+    "detalle": "Gran precisión"
+  },
+  {
+    "nombre": "Paula Núñez",
+    "categoria": "senior",
+    "modalidad": "tradicional",
+    "genero": "Femenino",
+    "marca": "320",
+    "fecha": "2023-12-30",
+    "detalle": "Actuación sobresaliente"
+  },
+  {
+    "nombre": "Eduardo Vargas",
+    "categoria": "plus 50",
+    "modalidad": "recurvo",
+    "genero": "Masculino",
+    "marca": "320",
+    "fecha": "2023-12-31",
+    "detalle": "Veterano destacado"
+  },
+  {
+    "nombre": "Rosa Castillo",
+    "categoria": "plus 50",
+    "modalidad": "recurvo",
+    "genero": "Femenino",
+    "marca": "330",
+    "fecha": "2024-01-01",
+    "detalle": "Experiencia en recurvo"
+  },
+  {
+    "nombre": "Jorge Peña",
+    "categoria": "plus 50",
+    "modalidad": "compuesto",
+    "genero": "Masculino",
+    "marca": "310",
+    "fecha": "2024-01-02",
+    "detalle": "Dominio del compuesto"
+  },
+  {
+    "nombre": "Carmen Rojas",
+    "categoria": "plus 50",
+    "modalidad": "compuesto",
+    "genero": "Femenino",
+    "marca": "315",
+    "fecha": "2024-01-03",
+    "detalle": "Rendimiento sobresaliente"
+  },
+  {
+    "nombre": "Francisco Campos",
+    "categoria": "plus 50",
+    "modalidad": "tradicional",
+    "genero": "Masculino",
+    "marca": "300",
+    "fecha": "2024-01-04",
+    "detalle": "Gran habilidad en tradicional"
+  },
+  {
+    "nombre": "Pilar Navarro",
+    "categoria": "plus 50",
+    "modalidad": "tradicional",
+    "genero": "Femenino",
+    "marca": "310",
+    "fecha": "2024-01-05",
+    "detalle": "Sobresaliente en tradicional"
+  }
+]
