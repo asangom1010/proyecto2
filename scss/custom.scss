@@ -406,5 +406,15 @@ body{
 *{
   font-family: 'Mary weather';
 }
-
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+      flex-wrap: wrap !important;
+      justify-content: flex-start;
+  }
+}
+.rounded {
+  border-radius: var(--bs-border-radius) !important;
+  height: 100%;
+  place-content: center;
+}
 //fin
