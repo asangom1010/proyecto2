@@ -348,11 +348,13 @@ body.active .btn-light:focus {
     border-color: #007bff;         /* Borde en azul */
   }
   .nav {
-    position: fixed;
-    width: 100%;
-    z-index: 1000; /* Asegura que el nav esté por encima de otros elementos */
-    top: 0; /* Lo fija en la parte superior */
-}
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+    transition: background-color 0.3s ease-in-out;
+  }
 .card{
   position: static;
 }
