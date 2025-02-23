@@ -402,6 +402,7 @@ body:not(.active) .dataTables_wrapper .dataTables_paginate .paginate_button.curr
 
 body {
   background-color: white;
+  Max-width: 100%;
 }
 
 .navbar-brand img {
@@ -423,4 +424,16 @@ body {
 
 * {
   font-family: "Mary weather";
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    flex-wrap: wrap !important;
+    justify-content: flex-start;
+  }
+}
+.rounded {
+  border-radius: var(--bs-border-radius) !important;
+  height: 100%;
+  place-content: center;
 }/*# sourceMappingURL=custom.css.map */
