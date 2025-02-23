@@ -418,5 +418,26 @@ body{
   height: 100%;
   place-content: center;
 }
+html, body {
+  width: 100%;
+}
+* {
+  max-width: 100%;
+}
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.carousel {
+  max-width: 100%;
+  overflow: hidden;
+}
+body * {
+  outline: 1px solid red;
+}
+body {
+  overflow-x: hidden;
+}
 
 //fin
