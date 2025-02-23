@@ -436,32 +436,4 @@ body {
   border-radius: var(--bs-border-radius) !important;
   height: 100%;
   place-content: center;
-}
-
-html, body {
-  width: 100%;
-}
-
-* {
-  max-width: 100%;
-}
-
-video {
-  width: 100vw;
-  height: 100vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.carousel {
-  max-width: 100%;
-  overflow: hidden;
-}
-
-body * {
-  outline: 1px solid red;
-}
-
-body {
-  overflow-x: hidden;
 }/*# sourceMappingURL=custom.css.map */
