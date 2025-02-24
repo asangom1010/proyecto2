@@ -10,6 +10,61 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    .cards-container {
+  display: flex;
+  flex-direction: row; /* Asegura que los gráficos estén alineados en columna */
+  align-items: center; /* Centra los gráficos */
+  gap: 20px; /* Espaciado entre las tarjetas */
+  padding: 20px;
+  width: 100%; /* Asegura que se utilice todo el ancho disponible */
+}
+
+/* Asegura que las tarjetas tengan un tamaño adecuado */
+.card {
+  width: 100%; /* Utiliza todo el ancho disponible */
+  max-width: 400px; /* Puedes ajustar el tamaño máximo de cada tarjeta */
+  margin: 10px 0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para las tarjetas */
+}
+
+/* Cabecera de la tarjeta */
+.card-header {
+  background-color: #f8f9fa;
+  padding: 10px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Estilos para el gráfico dentro de cada tarjeta */
+.card canvas {
+  margin: 0 auto; /* Centra los gráficos dentro de la tarjeta */
+  max-width: 300px; /* Ajusta al tamaño máximo necesario */
+}
+
+/* Modo oscuro */
+body.active .cards-container {
+  background-color: #2C2C2E;
+}
+
+body.active .card {
+  background-color: #37373a; /* Fondo oscuro para las tarjetas */
+  color: white; /* Texto blanco */
+}
+
+body.active .card-header {
+  background-color: #444; /* Fondo oscuro para el encabezado */
+  color: white; /* Texto blanco */
+}
+
+body.active .card canvas {
+  max-width: 300px; /* Asegura que el gráfico no sobrepase el ancho */
+  height: auto; /* Mantiene la proporción del gráfico */
+}
+  </style>
   <!-- Estilos adicionales para las cards -->
   <style>
     .cards-container {
@@ -38,6 +93,84 @@
       display: block;
       margin: 0 auto;
     }
+
+  </style>
+  <style>
+    /* Estilos generales para la tabla */
+table {
+  width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+  border-collapse: collapse; /* Elimina el espacio entre celdas */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos para las cabeceras de la tabla */
+th, td {
+  padding: 12px; /* Espaciado en las celdas */
+  text-align: left; /* Alineación del texto a la izquierda */
+  border: 1px solid #ddd; /* Borde claro */
+}
+
+/* Estilos para las filas alternadas (modo claro) */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Fondo blanco para las filas pares */
+}
+
+/* Estilos para las filas (modo claro) */
+tbody tr:hover {
+  background-color: #f1f1f1; /* Fondo gris claro cuando pasas el ratón */
+}
+
+/* Modo Claro */
+body:not(.active) table {
+  background-color: #fff; /* Fondo blanco para la tabla */
+  color: #333; /* Texto oscuro */
+}
+
+body:not(.active) th {
+  background-color: #4CAF50; /* Fondo verde para los encabezados */
+  color: white; /* Texto blanco */
+}
+
+body:not(.active) td {
+  background-color: #fff; /* Fondo blanco para las celdas */
+  color: #333; /* Texto oscuro */
+  border: 1px solid #ddd; /* Borde claro */
+}
+
+/* Modo Oscuro */
+body.active table {
+  background-color: #2C2C2E; /* Fondo oscuro para la tabla */
+  color: #f1f1f1; /* Texto blanco */
+}
+
+body.active th {
+  background-color: #444; /* Fondo oscuro para los encabezados */
+  color: #fff; /* Texto blanco */
+  border: 1px solid #555; /* Borde oscuro */
+}
+
+body.active td {
+  background-color: #333; /* Fondo oscuro para las celdas */
+  color: #f1f1f1; /* Texto claro */
+  border: 1px solid #555; /* Borde oscuro */
+}
+
+/* Filas alternadas para mejorar la legibilidad en modo oscuro */
+body.active tbody tr:nth-child(even) {
+  background-color: #29292B; /* Fondo más oscuro para las filas pares */
+}
+
+/* Efecto de hover en filas en modo oscuro */
+body.active tbody tr:hover {
+  background-color: #444; /* Fondo más oscuro al pasar el ratón */
+}
+
+/* Estilo para el cambio de color en las celdas al hacer hover */
+th:hover, td:hover {
+  background-color: #ddd; /* Resalta celdas al pasar el mouse */
+  cursor: pointer; /* Apunta a las celdas */
+}
+
   </style>
 </head>
 
@@ -173,21 +306,21 @@
   </section>
 
   <!-- Medallero Comunidades Autónomas -->
-  <div class="cards-container" data-aos="fade-up" data-aos-duration="1000">
+  <div class="cards-container graficos" data-aos="fade-up" data-aos-duration="1000">
     <h2 class="text-center">Medallero Comunidades Autónomas</h2>
     <div class="cards-container">
       <!-- Card 1 -->
-      <div class="card">
+      <div class="card carta">
         <div class="card-header">Medallas de oro</div>
         <canvas id="chart1" width="150" height="150"></canvas>
       </div>
       <!-- Card 2 -->
-      <div class="card">
+      <div class="card carta">
         <div class="card-header">Medallas de plata</div>
         <canvas id="chart2" width="150" height="150"></canvas>
       </div>
       <!-- Card 3 -->
-      <div class="card">
+      <div class="card carta">
         <div class="card-header">Medallas de bronce</div>
         <canvas id="chart3" width="150" height="150"></canvas>
       </div>
@@ -264,83 +397,118 @@
     // Inicializar AOS
     AOS.init();
 
-    // Script para gráficos
-    const data1 = {
-      labels: ['Madrid', 'Andalucía', 'Baleares', 'Aragón', 'Cataluña', 'Valencia', 'Castilla La Mancha', 'Castilla y León', 'Castilla y León', 'Galicia', 'Extremadura'],
-      datasets: [{
-        data: [12, 6, 4, 3, 3, 1, 1, 1, 1, 0, 0],
-        backgroundColor: [
-          'rgba(200, 16, 46, 0.5)',
-          'rgba(0, 104, 71, 0.5)',
-          'rgba(255, 204, 0, 0.5)',
-          'rgba(0, 90, 171, 0.5)',
-          'rgba(230, 25, 55, 0.5)',
-          'rgba(255, 153, 51, 0.5)',
-          'rgba(192, 57, 43, 0.5)',
-          'rgba(140, 98, 57, 0.5)',
-          'rgba(140, 98, 57, 0.5)',
-          'rgba(0, 117, 94, 0.5)',
-          'rgba(0, 102, 0, 0.5)'
-        ]
-      }]
-    };
+  // Datos detallados de medallas para cada región en los 3 gráficos
+const detallesMedallas1 = {
+  'Madrid': { total: 12, recurvo: 4, compuesto: 4, tradicional: 2, equipos: 2 },
+  'Andalucía': { total: 6, recurvo: 2, compuesto: 2, tradicional: 1, equipos: 1 },
+  'Baleares': { total: 4, recurvo: 1, compuesto: 1, tradicional: 1, equipos: 1 },
+  'Aragón': { total: 3, recurvo: 1, compuesto: 1, tradicional: 1, equipos: 0 },
+  'Cataluña': { total: 3, recurvo: 1, compuesto: 1, tradicional: 0, equipos: 1 },
+  'Valencia': { total: 1, recurvo: 0, compuesto: 1, tradicional: 0, equipos: 0 },
+  'Castilla La Mancha': { total: 1, recurvo: 0, compuesto: 0, tradicional: 1, equipos: 0 },
+  'Castilla y León': { total: 1, recurvo: 0, compuesto: 1, tradicional: 0, equipos: 0 },
+  'Galicia': { total: 0, recurvo: 0, compuesto: 0, tradicional: 0, equipos: 0 },
+  'Extremadura': { total: 0, recurvo: 0, compuesto: 0, tradicional: 0, equipos: 0 }
+};
 
-    const data2 = {
-      labels: ['Madrid', 'Andalucía', 'Baleares', 'Aragón', 'Cataluña', 'Valencia', 'Castilla La Mancha', 'Castilla y León', 'Castilla y León', 'Galicia', 'Extremadura'],
-      datasets: [{
-        data: [8, 4, 7, 5, 2, 9, 3, 6, 4, 2, 1],
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.5)',
-          'rgba(54, 162, 235, 0.5)',
-          'rgba(255, 206, 86, 0.5)',
-          'rgba(75, 192, 192, 0.5)',
-          'rgba(153, 102, 255, 0.5)',
-          'rgba(255, 159, 64, 0.5)',
-          'rgba(255, 99, 132, 0.5)',
-          'rgba(54, 162, 235, 0.5)',
-          'rgba(255, 206, 86, 0.5)',
-          'rgba(75, 192, 192, 0.5)',
-          'rgba(153, 102, 255, 0.5)'
-        ]
-      }]
-    };
+const detallesMedallas2 = {
+  'Madrid': { total: 8, recurvo: 2, compuesto: 3, tradicional: 2, equipos: 1 },
+  'Andalucía': { total: 4, recurvo: 1, compuesto: 1, tradicional: 1, equipos: 1 },
+  'Baleares': { total: 7, recurvo: 2, compuesto: 2, tradicional: 2, equipos: 1 },
+  'Aragón': { total: 5, recurvo: 1, compuesto: 2, tradicional: 1, equipos: 1 },
+  'Cataluña': { total: 2, recurvo: 1, compuesto: 1, tradicional: 0, equipos: 0 },
+  'Valencia': { total: 9, recurvo: 3, compuesto: 3, tradicional: 2, equipos: 1 },
+  'Castilla La Mancha': { total: 3, recurvo: 1, compuesto: 1, tradicional: 1, equipos: 0 },
+  'Castilla y León': { total: 6, recurvo: 2, compuesto: 2, tradicional: 1, equipos: 1 },
+  'Galicia': { total: 2, recurvo: 1, compuesto: 0, tradicional: 1, equipos: 0 },
+  'Extremadura': { total: 1, recurvo: 0, compuesto: 1, tradicional: 0, equipos: 0 }
+};
 
-    const data3 = {
-      labels: ['Madrid', 'Andalucía', 'Baleares', 'Aragón', 'Cataluña', 'Valencia', 'Castilla La Mancha', 'Castilla y León', 'Castilla y León', 'Galicia', 'Extremadura'],
-      datasets: [{
-        data: [3, 9, 2, 6, 5, 4, 7, 1, 8, 0, 2],
-        backgroundColor: [
-          'rgba(100, 149, 237, 0.5)',
-          'rgba(255, 105, 180, 0.5)',
-          'rgba(60, 179, 113, 0.5)',
-          'rgba(255, 165, 0, 0.5)',
-          'rgba(199, 21, 133, 0.5)',
-          'rgba(72, 61, 139, 0.5)',
-          'rgba(0, 128, 128, 0.5)',
-          'rgba(240, 128, 128, 0.5)',
-          'rgba(218, 112, 214, 0.5)',
-          'rgba(255, 215, 0, 0.5)',
-          'rgba(100, 149, 237, 0.5)'
-        ]
-      }]
-    };
+const detallesMedallas3 = {
+  'Madrid': { total: 3, recurvo: 1, compuesto: 1, tradicional: 1, equipos: 0 },
+  'Andalucía': { total: 9, recurvo: 3, compuesto: 3, tradicional: 2, equipos: 1 },
+  'Baleares': { total: 2, recurvo: 1, compuesto: 0, tradicional: 1, equipos: 0 },
+  'Aragón': { total: 6, recurvo: 2, compuesto: 2, tradicional: 1, equipos: 1 },
+  'Cataluña': { total: 5, recurvo: 1, compuesto: 2, tradicional: 1, equipos: 1 },
+  'Valencia': { total: 4, recurvo: 1, compuesto: 1, tradicional: 1, equipos: 1 },
+  'Castilla La Mancha': { total: 7, recurvo: 2, compuesto: 2, tradicional: 2, equipos: 1 },
+  'Castilla y León': { total: 1, recurvo: 0, compuesto: 1, tradicional: 0, equipos: 0 },
+  'Galicia': { total: 8, recurvo: 3, compuesto: 2, tradicional: 2, equipos: 1 },
+  'Extremadura': { total: 2, recurvo: 0, compuesto: 1, tradicional: 1, equipos: 0 }
+};
 
-    const options = {
-      plugins: {
-        legend: { display: false },
-        tooltip: { enabled: true }
-      },
-      responsive: false,
-      maintainAspectRatio: false
-    };
+// Función para generar datos para los gráficos
+function generarDatos(detallesMedallas) {
+  return {
+    labels: Object.keys(detallesMedallas),
+    datasets: [{
+      data: Object.values(detallesMedallas).map(d => d.total),
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.5)', 'rgba(54, 162, 235, 0.5)', 'rgba(255, 206, 86, 0.5)',
+        'rgba(75, 192, 192, 0.5)', 'rgba(153, 102, 255, 0.5)', 'rgba(255, 159, 64, 0.5)',
+        'rgba(255, 99, 132, 0.5)', 'rgba(54, 162, 235, 0.5)', 'rgba(255, 206, 86, 0.5)',
+        'rgba(75, 192, 192, 0.5)'
+      ]
+    }]
+  };
+}
 
-    const ctx1 = document.getElementById("chart1").getContext("2d");
-    const ctx2 = document.getElementById("chart2").getContext("2d");
-    const ctx3 = document.getElementById("chart3").getContext("2d");
+// Función para generar tooltips detallados
+function generarTooltip(detallesMedallas) {
+  return {
+    enabled: true,
+    callbacks: {
+      label: function (tooltipItem) {
+        let region = tooltipItem.label;
+        let detalle = detallesMedallas[region];
 
-    new Chart(ctx1, { type: "pie", data: data1, options: options });
-    new Chart(ctx2, { type: "pie", data: data2, options: options });
-    new Chart(ctx3, { type: "pie", data: data3, options: options });
+        if (detalle) {
+          return [
+            `${region}: ${detalle.total} medallas 🏅`,
+            `🏹 Recurvo: ${detalle.recurvo}`,
+            `🏹 Compuesto: ${detalle.compuesto}`,
+            `🏹 Tradicional: ${detalle.tradicional}`,
+            `🤝 Equipos: ${detalle.equipos}`
+          ];
+        } else {
+          return `${region}: Sin datos disponibles`;
+        }
+      }
+    }
+  };
+}
+
+// Opciones de los gráficos con tooltips personalizados
+function generarOpciones(detallesMedallas) {
+  return {
+    plugins: { legend: { display: false }, tooltip: generarTooltip(detallesMedallas) },
+    responsive: false,
+    maintainAspectRatio: false
+  };
+}
+
+// Crear los gráficos
+const ctx1 = document.getElementById("chart1").getContext("2d");
+const ctx2 = document.getElementById("chart2").getContext("2d");
+const ctx3 = document.getElementById("chart3").getContext("2d");
+
+new Chart(ctx1, {
+  type: 'pie', // tipo de gráfico
+  data: generarDatos(detallesMedallas1),
+  options: generarOpciones(detallesMedallas1)
+});
+
+new Chart(ctx2, {
+  type: 'pie',
+  data: generarDatos(detallesMedallas2),
+  options: generarOpciones(detallesMedallas2)
+});
+
+new Chart(ctx3, {
+  type: 'pie',
+  data: generarDatos(detallesMedallas3),
+  options: generarOpciones(detallesMedallas3)
+});
   </script>
 </body>
 
