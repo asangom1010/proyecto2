@@ -359,13 +359,10 @@ body:not(.active) .dataTables_wrapper .dataTables_paginate .paginate_button.curr
 }
 
 .nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px); /* Efecto de desenfoque */
-  transition: background-color 0.3s ease-in-out;
+  position: fixed;
+  width: 100%;
+  z-index: 1000; /* Asegura que el nav esté por encima de otros elementos */
+  top: 0; /* Lo fija en la parte superior */
 }
 
 .card {
@@ -405,7 +402,6 @@ body:not(.active) .dataTables_wrapper .dataTables_paginate .paginate_button.curr
 
 body {
   background-color: white;
-  Max-width: 100%;
 }
 
 .navbar-brand img {
@@ -439,4 +435,35 @@ body {
   border-radius: var(--bs-border-radius) !important;
   height: 100%;
   place-content: center;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.nav-menu ul {
+  display: flex;
+  align-items: center; /* Alinea todos los elementos verticalmente */
+  gap: 15px; /* Espaciado entre los elementos */
+}
+
+.nav-menu ul li {
+  display: flex;
+  align-items: center; /* Asegura que cada elemento del menú esté alineado */
+}
+
+/* Ajusta el contenedor del interruptor */
+.dark-mode-container {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacio entre el texto y el interruptor */
+}
+
+/* Si es necesario, centra el interruptor específicamente */
+.dark-mode {
+  margin: 7px;
+  margin-top: 10px;
+  padding: 0;
 }/*# sourceMappingURL=custom.css.map */
